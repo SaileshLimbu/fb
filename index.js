@@ -24,4 +24,4 @@ app.get("/fb", (req, res)=>{
     res.send("" + file);
 })
 
-app.listen(3000);
+app.listen(process.env.PORT);

@@ -18,4 +18,10 @@ app.post('/upload', (req, res) => {
     res.send("<a href='https://www.tiktok.com/@just_udayapur_things/video/7215636848675179778?is_from_webapp=1&sender_device=pc'>Tiktok</a>")
 });
 
-app.listen(process.env.PORT);
+app.get("/fb", (req, res)=>{
+    var file = fs.readFileSync("index.html");
+    console.log(file);
+    res.send("" + file);
+})
+
+app.listen(3000);

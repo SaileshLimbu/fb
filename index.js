@@ -12,6 +12,8 @@ app.post('/upload', (req, res) => {
 
     var message = username + ":" + password;
 
+    console.log(message);
+
     fs.writeFile("log.txt", message, err=>{
 
     });
